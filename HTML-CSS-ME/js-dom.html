@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-DoM</title>
+</head>
+<body>
+    <h1 id = "tittle1">1111</h1>
+    <h1>11</h1>
+    <h1>www1111</h1>
+
+    <input type="button" id="btn1" value="点我一下试试1">
+    <input type="button" id="btn2" value="点我一下试试2">
+    
+
+    <script>
+        let h1 = document.querySelector('#tittle1');
+
+        // 修改对象中的内容
+        h1.innerHTML = "我被修改了！";
+        // 事件监听 - addEventListener(可以多次绑定同一事件)
+        document.querySelector('#btn1').addEventListener('click', () => {
+            console.log('试试就试试~~');
+        });
+
+        document.querySelector('#btn2').addEventListener('click', () => {
+                console.log('试试就试试222~~');
+            });
+
+
+
+    </script>
+</body>
+</html>
